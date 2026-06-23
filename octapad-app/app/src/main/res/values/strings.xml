@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pramod Octapad Pro Fast</string>
+    <string name="firebase_database_url">https://pramod-octapad-pro.firebaseio.com</string>
+    <string name="gcm_defaultSenderId">263614358958</string>
+    <string name="google_api_key">AIzaSyCC3ibrilnRZdS647_2CtuiRJ3KRJXBCdQ</string>
+    <string name="google_app_id">1:263614358958:android:4cd0426d99c38e02c9143f</string>
+    <string name="google_storage_bucket">pramod-octapad-pro.firebasestorage.app</string>
+    <string name="project_id">pramod-octapad-pro</string>
+</resources>

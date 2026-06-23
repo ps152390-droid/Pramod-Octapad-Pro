@@ -1,0 +1,607 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. See https://docs.gradle.org/8.1/userguide/gradle_daemon.html#sec:disabling_the_daemon.
+Daemon will be stopped at the end of the build 
+WARNING: We recommend using a newer Android Gradle plugin to use compileSdk = 34
+
+This Android Gradle plugin (8.1.0) was tested up to compileSdk = 33 (and compileSdkPreview = "UpsideDownCakePrivacySandbox").
+
+You are strongly encouraged to update your project to use a newer
+Android Gradle plugin that has been tested with compileSdk = 34.
+
+If you are already using the latest version of the Android Gradle plugin,
+you may need to wait until a newer version with support for compileSdk = 34 is available.
+
+To suppress this warning, add/update
+    android.suppressUnsupportedCompileSdk=34
+to this project's gradle.properties.
+> Task :clean UP-TO-DATE
+> Task :app:clean
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:javaPreCompileDebug
+> Task :app:generateDebugResValues
+> Task :app:checkDebugAarMetadata
+> Task :app:mapDebugSourceSetPaths
+> Task :app:generateDebugResources
+> Task :app:packageDebugResources
+> Task :app:parseDebugLocalResources
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksDebug
+> Task :app:mergeDebugResources
+
+> Task :app:processDebugMainManifest
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/AndroidManifest.xml:27:9-41 Warning:
+	android:extractNativeLibs should not be specified in this source AndroidManifest.xml file. See https://d.android.com/guide/topics/manifest/application-element#extractNativeLibs for more information.
+The AGP Upgrade Assistant can remove the attribute from the AndroidManifest.xml file and update the build file accordingly. See https://d.android.com/studio/build/agp-upgrade-assistant for more information.
+
+> Task :app:processDebugManifest
+> Task :app:mergeDebugShaders
+> Task :app:compileDebugShaders NO-SOURCE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :app:mergeDebugAssets
+> Task :app:processDebugManifestForPackage
+> Task :app:compressDebugAssets
+> Task :app:processDebugJavaRes NO-SOURCE
+> Task :app:processDebugResources
+> Task :app:mergeDebugJavaResource
+
+> Task :app:compileDebugJavaWithJavac
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:967: error: illegal start of type
+                    this.mediaPlayers[this.selectedPad] = MediaPlayer.create(this, uri);
+                    ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:967: error: ';' expected
+                    this.mediaPlayers[this.selectedPad] = MediaPlayer.create(this, uri);
+                        ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:967: error: ']' expected
+                    this.mediaPlayers[this.selectedPad] = MediaPlayer.create(this, uri);
+                                      ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:967: error: ';' expected
+                    this.mediaPlayers[this.selectedPad] = MediaPlayer.create(this, uri);
+                                          ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:967: error: <identifier> expected
+                    this.mediaPlayers[this.selectedPad] = MediaPlayer.create(this, uri);
+                                                      ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:967: error: <identifier> expected
+                    this.mediaPlayers[this.selectedPad] = MediaPlayer.create(this, uri);
+                                                                            ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:967: error: illegal start of type
+                    this.mediaPlayers[this.selectedPad] = MediaPlayer.create(this, uri);
+                                                                             ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:967: error: <identifier> expected
+                    this.mediaPlayers[this.selectedPad] = MediaPlayer.create(this, uri);
+                                                                                      ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:969: error: illegal start of type
+                    if (mediaPlayer2 != null) {
+                    ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:969: error: <identifier> expected
+                    if (mediaPlayer2 != null) {
+                                    ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:973: error: invalid method declaration; return type required
+                    preloadLoop(this.selectedPad);
+                    ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:973: error: illegal start of type
+                    preloadLoop(this.selectedPad);
+                                ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:973: error: wrong receiver parameter name
+                    preloadLoop(this.selectedPad);
+                                                ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:975: error: class, interface, or enum expected
+            MediaPlayer mp = this.mediaPlayers[index];
+            ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:976: error: class, interface, or enum expected
+            if (mp == null) {
+            ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:978: error: class, interface, or enum expected
+                if (mp == null) {
+                ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:980: error: class, interface, or enum expected
+                }
+                ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:982: error: class, interface, or enum expected
+                this.mediaPlayers[index] = mp;
+                ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:983: error: class, interface, or enum expected
+            }
+            ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:987: error: class, interface, or enum expected
+                applyPlaybackParams(mp);
+                ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:988: error: class, interface, or enum expected
+                mp.start();
+                ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:989: error: class, interface, or enum expected
+                mp.pause();
+                ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:990: error: class, interface, or enum expected
+                mp.seekTo(0);
+                ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:991: error: class, interface, or enum expected
+            } catch (Exception e) {
+            ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:994: error: class, interface, or enum expected
+        } catch (Exception e2) {
+        ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:999: error: class, interface, or enum expected
+    public void onWindowFocusChanged(boolean hasFocus) {
+           ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1001: error: class, interface, or enum expected
+        if (hasFocus) {
+        ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1003: error: class, interface, or enum expected
+        }
+        ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1008: error: class, interface, or enum expected
+        decorView.setSystemUiVisibility(5894);
+        ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1009: error: class, interface, or enum expected
+    }
+    ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1012: error: class, interface, or enum expected
+    protected void onPause() throws IllegalStateException {
+              ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1014: error: class, interface, or enum expected
+        for (int i = 0; i < 8; i++) {
+        ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1014: error: class, interface, or enum expected
+        for (int i = 0; i < 8; i++) {
+                        ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1014: error: class, interface, or enum expected
+        for (int i = 0; i < 8; i++) {
+                               ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1016: error: class, interface, or enum expected
+            if (mediaPlayer != null && mediaPlayer.isPlaying()) {
+            ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1018: error: class, interface, or enum expected
+                this.loopPads[i].setBackgroundResource(R.drawable.pad_black_selector);
+                ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1019: error: class, interface, or enum expected
+            }
+            ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1024: error: class, interface, or enum expected
+    protected void onDestroy() throws IllegalStateException, IOException {
+              ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1026: error: class, interface, or enum expected
+        for (int i = 0; i < 8; i++) {
+        ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1026: error: class, interface, or enum expected
+        for (int i = 0; i < 8; i++) {
+                        ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1026: error: class, interface, or enum expected
+        for (int i = 0; i < 8; i++) {
+                               ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1028: error: class, interface, or enum expected
+            if (mediaPlayer != null) {
+            ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1031: error: class, interface, or enum expected
+                }
+                ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1033: error: class, interface, or enum expected
+                this.mediaPlayers[i] = null;
+                ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1034: error: class, interface, or enum expected
+            }
+            ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1037: error: class, interface, or enum expected
+    }
+    ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1042: error: class, interface, or enum expected
+            this.midiManager = midiManager;
+            ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1043: error: class, interface, or enum expected
+            if (midiManager == null) {
+            ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1045: error: class, interface, or enum expected
+            }
+            ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1047: error: class, interface, or enum expected
+            for (MidiDeviceInfo info : infos) {
+            ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1049: error: class, interface, or enum expected
+            }
+            ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1052: error: class, interface, or enum expected
+                public void onDeviceAdded(MidiDeviceInfo device) {
+                       ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1054: error: class, interface, or enum expected
+                }
+                ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1057: error: class, interface, or enum expected
+                public void onDeviceRemoved(MidiDeviceInfo device) throws IOException {
+                       ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1060: error: class, interface, or enum expected
+                        if (LoopsActivity.this.txtMidiStatus != null) {
+                        ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1062: error: class, interface, or enum expected
+                        }
+                        ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1066: error: class, interface, or enum expected
+        }
+        ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1070: error: class, interface, or enum expected
+    public void openMidiDevice(MidiDeviceInfo info) {
+           ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1074: error: class, interface, or enum expected
+                public void onDeviceOpened(MidiDevice device) {
+                       ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1076: error: class, interface, or enum expected
+                    LoopsActivity.this.midiOutputPort = device.openOutputPort(0);
+                    ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1077: error: class, interface, or enum expected
+                    if (LoopsActivity.this.midiOutputPort != null) {
+                    ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1080: error: class, interface, or enum expected
+                        }
+                        ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1083: error: class, interface, or enum expected
+                            public void onSend(byte[] msg, int offset, int count, long timestamp) {
+                                   ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1085: error: class, interface, or enum expected
+                                int status = 0;
+                                ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1086: error: class, interface, or enum expected
+                                for (int i = offset; i < end; i++) {
+                                ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1086: error: class, interface, or enum expected
+                                for (int i = offset; i < end; i++) {
+                                                     ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1086: error: class, interface, or enum expected
+                                for (int i = offset; i < end; i++) {
+                                                              ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1088: error: class, interface, or enum expected
+                                    if (value >= 0x80) {
+                                    ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1090: error: class, interface, or enum expected
+                                        continue;
+                                        ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1091: error: class, interface, or enum expected
+                                    }
+                                    ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1095: error: class, interface, or enum expected
+                                        }
+                                        ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1097: error: class, interface, or enum expected
+                                        byte velocity = msg[i + 1];
+                                        ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1098: error: class, interface, or enum expected
+                                        if ((velocity & 0xFF) > 0) {
+                                        ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1100: error: class, interface, or enum expected
+                                        }
+                                        ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1102: error: class, interface, or enum expected
+                                        continue;
+                                        ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1103: error: class, interface, or enum expected
+                                    }
+                                    ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1106: error: class, interface, or enum expected
+                                        continue;
+                                        ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1107: error: class, interface, or enum expected
+                                    }
+                                    ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1111: error: class, interface, or enum expected
+                        ((TextView) LoopsActivity.this.findViewById(R.id.txtMidiStatus)).setText("MIDI connected");
+                        ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1112: error: class, interface, or enum expected
+                    }
+                    ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1115: error: class, interface, or enum expected
+        }
+        ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1119: error: class, interface, or enum expected
+    public void closeMidiDevice() throws IOException {
+           ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1122: error: class, interface, or enum expected
+            if (midiOutputPort != null) {
+            ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1124: error: class, interface, or enum expected
+                this.midiOutputPort = null;
+                ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1125: error: class, interface, or enum expected
+            }
+            ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1127: error: class, interface, or enum expected
+            if (midiDevice != null) {
+            ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1129: error: class, interface, or enum expected
+                this.openedMidiDevice = null;
+                ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1130: error: class, interface, or enum expected
+            }
+            ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1133: error: class, interface, or enum expected
+        }
+        ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1137: error: class, interface, or enum expected
+    public void handleMidiNoteOn(byte note, byte velocity) {
+           ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1139: error: class, interface, or enum expected
+        switch (note) {
+        ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1142: error: class, interface, or enum expected
+                break;
+                ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1143: error: class, interface, or enum expected
+            case 37:
+            ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1145: error: class, interface, or enum expected
+                break;
+                ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1146: error: class, interface, or enum expected
+            case 38:
+            ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1149: error: class, interface, or enum expected
+                break;
+                ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1150: error: class, interface, or enum expected
+            case 39:
+            ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1152: error: class, interface, or enum expected
+                break;
+                ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1153: error: class, interface, or enum expected
+            case 42:
+            ^
+/workspaces/Pramod-Octapad-Pro/octapad-app/app/src/main/java/com/pramod/octapadpromidi/LoopsActivity.java:1156: error: class, interface, or enum expected
+                break;
+                ^
+100 errors
+only showing the first 100 errors, of 118 total; use -Xmaxerrs if you would like to see more
+
+> Task :app:compileDebugJavaWithJavac FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileDebugJavaWithJavac'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':app:compileDebugJavaWithJavac'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.lambda$executeIfValid$1(ExecuteActionsTaskExecuter.java:149)
+	at org.gradle.internal.Try$Failure.ifSuccessfulOrElse(Try.java:282)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeIfValid(ExecuteActionsTaskExecuter.java:147)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:135)
+	at org.gradle.api.internal.tasks.execution.FinalizePropertiesTaskExecuter.execute(FinalizePropertiesTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.ResolveTaskExecutionModeExecuter.execute(ResolveTaskExecutionModeExecuter.java:51)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:57)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:74)
+	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:36)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.executeTask(EventFiringTaskExecuter.java:77)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:55)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:52)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:199)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:157)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.call(DefaultBuildOperationExecutor.java:73)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter.execute(EventFiringTaskExecuter.java:52)
+	at org.gradle.execution.plan.LocalTaskNodeExecutor.execute(LocalTaskNodeExecutor.java:42)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:337)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:324)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:317)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:303)
+	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.execute(DefaultPlanExecutor.java:463)
+	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.run(DefaultPlanExecutor.java:380)
+	at org.gradle.execution.plan.DefaultPlanExecutor.process(DefaultPlanExecutor.java:116)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph.executeWithServices(DefaultTaskExecutionGraph.java:138)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph.execute(DefaultTaskExecutionGraph.java:123)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:35)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:51)
+	at org.gradle.execution.BuildOperationFiringBuildWorkerExecutor$ExecuteTasks.call(BuildOperationFiringBuildWorkerExecutor.java:54)
+	at org.gradle.execution.BuildOperationFiringBuildWorkerExecutor$ExecuteTasks.call(BuildOperationFiringBuildWorkerExecutor.java:43)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:199)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:157)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.call(DefaultBuildOperationExecutor.java:73)
+	at org.gradle.execution.BuildOperationFiringBuildWorkerExecutor.execute(BuildOperationFiringBuildWorkerExecutor.java:40)
+	at org.gradle.internal.build.DefaultBuildLifecycleController.lambda$executeTasks$10(DefaultBuildLifecycleController.java:202)
+	at org.gradle.internal.model.StateTransitionController.doTransition(StateTransitionController.java:266)
+	at org.gradle.internal.model.StateTransitionController.lambda$tryTransition$8(StateTransitionController.java:177)
+	at org.gradle.internal.work.DefaultSynchronizer.withLock(DefaultSynchronizer.java:44)
+	at org.gradle.internal.model.StateTransitionController.tryTransition(StateTransitionController.java:177)
+	at org.gradle.internal.build.DefaultBuildLifecycleController.executeTasks(DefaultBuildLifecycleController.java:202)
+	at org.gradle.internal.build.DefaultBuildWorkGraphController$DefaultBuildWorkGraph.runWork(DefaultBuildWorkGraphController.java:209)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:249)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:109)
+	at org.gradle.composite.internal.DefaultBuildController.doRun(DefaultBuildController.java:172)
+	at org.gradle.composite.internal.DefaultBuildController.access$000(DefaultBuildController.java:47)
+	at org.gradle.composite.internal.DefaultBuildController$BuildOpRunnable.run(DefaultBuildController.java:191)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:49)
+Caused by: org.gradle.api.internal.tasks.compile.CompilationFailedException: Compilation failed; see the compiler error output for details.
+	at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:57)
+	at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:39)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.delegateAndHandleErrors(NormalizingJavaCompiler.java:98)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.execute(NormalizingJavaCompiler.java:52)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.execute(NormalizingJavaCompiler.java:38)
+	at org.gradle.api.internal.tasks.compile.AnnotationProcessorDiscoveringCompiler.execute(AnnotationProcessorDiscoveringCompiler.java:51)
+	at org.gradle.api.internal.tasks.compile.AnnotationProcessorDiscoveringCompiler.execute(AnnotationProcessorDiscoveringCompiler.java:37)
+	at org.gradle.api.internal.tasks.compile.ModuleApplicationNameWritingCompiler.execute(ModuleApplicationNameWritingCompiler.java:46)
+	at org.gradle.api.internal.tasks.compile.ModuleApplicationNameWritingCompiler.execute(ModuleApplicationNameWritingCompiler.java:36)
+	at org.gradle.jvm.toolchain.internal.DefaultToolchainJavaCompiler.execute(DefaultToolchainJavaCompiler.java:57)
+	at org.gradle.api.tasks.compile.JavaCompile.lambda$createToolchainCompiler$3(JavaCompile.java:202)
+	at org.gradle.api.internal.tasks.compile.CleaningJavaCompiler.execute(CleaningJavaCompiler.java:53)
+	at org.gradle.api.internal.tasks.compile.incremental.IncrementalCompilerFactory.lambda$createRebuildAllCompiler$0(IncrementalCompilerFactory.java:52)
+	at org.gradle.api.internal.tasks.compile.incremental.SelectiveCompiler.execute(SelectiveCompiler.java:70)
+	at org.gradle.api.internal.tasks.compile.incremental.SelectiveCompiler.execute(SelectiveCompiler.java:44)
+	at org.gradle.api.internal.tasks.compile.incremental.IncrementalResultStoringCompiler.execute(IncrementalResultStoringCompiler.java:66)
+	at org.gradle.api.internal.tasks.compile.incremental.IncrementalResultStoringCompiler.execute(IncrementalResultStoringCompiler.java:52)
+	at org.gradle.api.internal.tasks.compile.CompileJavaBuildOperationReportingCompiler$1.call(CompileJavaBuildOperationReportingCompiler.java:64)
+	at org.gradle.api.internal.tasks.compile.CompileJavaBuildOperationReportingCompiler$1.call(CompileJavaBuildOperationReportingCompiler.java:48)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:199)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:157)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.call(DefaultBuildOperationExecutor.java:73)
+	at org.gradle.api.internal.tasks.compile.CompileJavaBuildOperationReportingCompiler.execute(CompileJavaBuildOperationReportingCompiler.java:48)
+	at org.gradle.api.tasks.compile.JavaCompile.performCompilation(JavaCompile.java:220)
+	at org.gradle.api.tasks.compile.JavaCompile.performIncrementalCompilation(JavaCompile.java:161)
+	at org.gradle.api.tasks.compile.JavaCompile.compile(JavaCompile.java:146)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:125)
+	at org.gradle.api.internal.project.taskfactory.IncrementalTaskAction.doExecute(IncrementalTaskAction.java:45)
+	at org.gradle.api.internal.project.taskfactory.StandardTaskAction.execute(StandardTaskAction.java:51)
+	at org.gradle.api.internal.project.taskfactory.IncrementalTaskAction.execute(IncrementalTaskAction.java:26)
+	at org.gradle.api.internal.project.taskfactory.StandardTaskAction.execute(StandardTaskAction.java:29)
+	at org.gradle.api.internal.tasks.execution.TaskExecution$3.run(TaskExecution.java:242)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:29)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:26)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:157)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.run(DefaultBuildOperationRunner.java:47)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:68)
+	at org.gradle.api.internal.tasks.execution.TaskExecution.executeAction(TaskExecution.java:227)
+	at org.gradle.api.internal.tasks.execution.TaskExecution.executeActions(TaskExecution.java:210)
+	at org.gradle.api.internal.tasks.execution.TaskExecution.executeWithPreviousOutputFiles(TaskExecution.java:193)
+	at org.gradle.api.internal.tasks.execution.TaskExecution.execute(TaskExecution.java:166)
+	at org.gradle.internal.execution.steps.ExecuteStep.executeInternal(ExecuteStep.java:105)
+	at org.gradle.internal.execution.steps.ExecuteStep.access$000(ExecuteStep.java:44)
+	at org.gradle.internal.execution.steps.ExecuteStep$1.call(ExecuteStep.java:59)
+	at org.gradle.internal.execution.steps.ExecuteStep$1.call(ExecuteStep.java:56)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:199)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:157)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.call(DefaultBuildOperationExecutor.java:73)
+	at org.gradle.internal.execution.steps.ExecuteStep.execute(ExecuteStep.java:56)
+	at org.gradle.internal.execution.steps.ExecuteStep.execute(ExecuteStep.java:44)
+	at org.gradle.internal.execution.steps.RemovePreviousOutputsStep.execute(RemovePreviousOutputsStep.java:67)
+	at org.gradle.internal.execution.steps.RemovePreviousOutputsStep.execute(RemovePreviousOutputsStep.java:37)
+	at org.gradle.internal.execution.steps.CancelExecutionStep.execute(CancelExecutionStep.java:41)
+	at org.gradle.internal.execution.steps.TimeoutStep.executeWithoutTimeout(TimeoutStep.java:74)
+	at org.gradle.internal.execution.steps.TimeoutStep.execute(TimeoutStep.java:55)
+	at org.gradle.internal.execution.steps.CreateOutputsStep.execute(CreateOutputsStep.java:50)
+	at org.gradle.internal.execution.steps.CreateOutputsStep.execute(CreateOutputsStep.java:28)
+	at org.gradle.internal.execution.steps.CaptureStateAfterExecutionStep.executeDelegateBroadcastingChanges(CaptureStateAfterExecutionStep.java:100)
+	at org.gradle.internal.execution.steps.CaptureStateAfterExecutionStep.execute(CaptureStateAfterExecutionStep.java:72)
+	at org.gradle.internal.execution.steps.CaptureStateAfterExecutionStep.execute(CaptureStateAfterExecutionStep.java:50)
+	at org.gradle.internal.execution.steps.ResolveInputChangesStep.execute(ResolveInputChangesStep.java:40)
+	at org.gradle.internal.execution.steps.ResolveInputChangesStep.execute(ResolveInputChangesStep.java:29)
+	at org.gradle.internal.execution.steps.BuildCacheStep.executeWithoutCache(BuildCacheStep.java:166)
+	at org.gradle.internal.execution.steps.BuildCacheStep.lambda$execute$1(BuildCacheStep.java:70)
+	at org.gradle.internal.Either$Right.fold(Either.java:175)
+	at org.gradle.internal.execution.caching.CachingState.fold(CachingState.java:59)
+	at org.gradle.internal.execution.steps.BuildCacheStep.execute(BuildCacheStep.java:68)
+	at org.gradle.internal.execution.steps.BuildCacheStep.execute(BuildCacheStep.java:46)
+	at org.gradle.internal.execution.steps.StoreExecutionStateStep.execute(StoreExecutionStateStep.java:36)
+	at org.gradle.internal.execution.steps.StoreExecutionStateStep.execute(StoreExecutionStateStep.java:25)
+	at org.gradle.internal.execution.steps.RecordOutputsStep.execute(RecordOutputsStep.java:36)
+	at org.gradle.internal.execution.steps.RecordOutputsStep.execute(RecordOutputsStep.java:22)
+	at org.gradle.internal.execution.steps.SkipUpToDateStep.executeBecause(SkipUpToDateStep.java:91)
+	at org.gradle.internal.execution.steps.SkipUpToDateStep.lambda$execute$2(SkipUpToDateStep.java:55)
+	at org.gradle.internal.execution.steps.SkipUpToDateStep.execute(SkipUpToDateStep.java:55)
+	at org.gradle.internal.execution.steps.SkipUpToDateStep.execute(SkipUpToDateStep.java:37)
+	at org.gradle.internal.execution.steps.ResolveChangesStep.execute(ResolveChangesStep.java:65)
+	at org.gradle.internal.execution.steps.ResolveChangesStep.execute(ResolveChangesStep.java:36)
+	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsFinishedStep.execute(MarkSnapshottingInputsFinishedStep.java:37)
+	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsFinishedStep.execute(MarkSnapshottingInputsFinishedStep.java:27)
+	at org.gradle.internal.execution.steps.ResolveCachingStateStep.execute(ResolveCachingStateStep.java:76)
+	at org.gradle.internal.execution.steps.ResolveCachingStateStep.execute(ResolveCachingStateStep.java:37)
+	at org.gradle.internal.execution.steps.ValidateStep.execute(ValidateStep.java:94)
+	at org.gradle.internal.execution.steps.ValidateStep.execute(ValidateStep.java:49)
+	at org.gradle.internal.execution.steps.CaptureStateBeforeExecutionStep.execute(CaptureStateBeforeExecutionStep.java:71)
+	at org.gradle.internal.execution.steps.CaptureStateBeforeExecutionStep.execute(CaptureStateBeforeExecutionStep.java:45)
+	at org.gradle.internal.execution.steps.SkipEmptyWorkStep.executeWithNonEmptySources(SkipEmptyWorkStep.java:177)
+	at org.gradle.internal.execution.steps.SkipEmptyWorkStep.execute(SkipEmptyWorkStep.java:86)
+	at org.gradle.internal.execution.steps.SkipEmptyWorkStep.execute(SkipEmptyWorkStep.java:53)
+	at org.gradle.internal.execution.steps.RemoveUntrackedExecutionStateStep.execute(RemoveUntrackedExecutionStateStep.java:32)
+	at org.gradle.internal.execution.steps.RemoveUntrackedExecutionStateStep.execute(RemoveUntrackedExecutionStateStep.java:21)
+	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsStartedStep.execute(MarkSnapshottingInputsStartedStep.java:38)
+	at org.gradle.internal.execution.steps.LoadPreviousExecutionStateStep.execute(LoadPreviousExecutionStateStep.java:36)
+	at org.gradle.internal.execution.steps.LoadPreviousExecutionStateStep.execute(LoadPreviousExecutionStateStep.java:23)
+	at org.gradle.internal.execution.steps.CleanupStaleOutputsStep.execute(CleanupStaleOutputsStep.java:75)
+	at org.gradle.internal.execution.steps.CleanupStaleOutputsStep.execute(CleanupStaleOutputsStep.java:41)
+	at org.gradle.internal.execution.steps.AssignWorkspaceStep.lambda$execute$0(AssignWorkspaceStep.java:32)
+	at org.gradle.api.internal.tasks.execution.TaskExecution$4.withWorkspace(TaskExecution.java:287)
+	at org.gradle.internal.execution.steps.AssignWorkspaceStep.execute(AssignWorkspaceStep.java:30)
+	at org.gradle.internal.execution.steps.AssignWorkspaceStep.execute(AssignWorkspaceStep.java:21)
+	at org.gradle.internal.execution.steps.IdentityCacheStep.execute(IdentityCacheStep.java:37)
+	at org.gradle.internal.execution.steps.IdentityCacheStep.execute(IdentityCacheStep.java:27)
+	at org.gradle.internal.execution.steps.IdentifyStep.execute(IdentifyStep.java:47)
+	at org.gradle.internal.execution.steps.IdentifyStep.execute(IdentifyStep.java:34)
+	at org.gradle.internal.execution.impl.DefaultExecutionEngine$1.execute(DefaultExecutionEngine.java:64)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeIfValid(ExecuteActionsTaskExecuter.java:146)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:135)
+	at org.gradle.api.internal.tasks.execution.FinalizePropertiesTaskExecuter.execute(FinalizePropertiesTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.ResolveTaskExecutionModeExecuter.execute(ResolveTaskExecutionModeExecuter.java:51)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:57)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:74)
+	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:36)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.executeTask(EventFiringTaskExecuter.java:77)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:55)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:52)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:199)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:157)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.call(DefaultBuildOperationExecutor.java:73)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter.execute(EventFiringTaskExecuter.java:52)
+	at org.gradle.execution.plan.LocalTaskNodeExecutor.execute(LocalTaskNodeExecutor.java:42)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:337)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:324)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:317)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:303)
+	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.execute(DefaultPlanExecutor.java:463)
+	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.run(DefaultPlanExecutor.java:380)
+	at org.gradle.execution.plan.DefaultPlanExecutor.process(DefaultPlanExecutor.java:116)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph.executeWithServices(DefaultTaskExecutionGraph.java:138)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph.execute(DefaultTaskExecutionGraph.java:123)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:35)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:51)
+	at org.gradle.execution.BuildOperationFiringBuildWorkerExecutor$ExecuteTasks.call(BuildOperationFiringBuildWorkerExecutor.java:54)
+	at org.gradle.execution.BuildOperationFiringBuildWorkerExecutor$ExecuteTasks.call(BuildOperationFiringBuildWorkerExecutor.java:43)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:199)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:157)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.call(DefaultBuildOperationExecutor.java:73)
+	at org.gradle.execution.BuildOperationFiringBuildWorkerExecutor.execute(BuildOperationFiringBuildWorkerExecutor.java:40)
+	at org.gradle.internal.build.DefaultBuildLifecycleController.lambda$executeTasks$10(DefaultBuildLifecycleController.java:202)
+	at org.gradle.internal.model.StateTransitionController.doTransition(StateTransitionController.java:266)
+	at org.gradle.internal.model.StateTransitionController.lambda$tryTransition$8(StateTransitionController.java:177)
+	at org.gradle.internal.work.DefaultSynchronizer.withLock(DefaultSynchronizer.java:44)
+	at org.gradle.internal.model.StateTransitionController.tryTransition(StateTransitionController.java:177)
+	at org.gradle.internal.build.DefaultBuildLifecycleController.executeTasks(DefaultBuildLifecycleController.java:202)
+	at org.gradle.internal.build.DefaultBuildWorkGraphController$DefaultBuildWorkGraph.runWork(DefaultBuildWorkGraphController.java:209)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:249)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:109)
+	at org.gradle.composite.internal.DefaultBuildController.doRun(DefaultBuildController.java:172)
+	at org.gradle.composite.internal.DefaultBuildController.access$000(DefaultBuildController.java:47)
+	at org.gradle.composite.internal.DefaultBuildController$BuildOpRunnable.run(DefaultBuildController.java:191)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:49)
+
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 1m 2s
+20 actionable tasks: 19 executed, 1 up-to-date
