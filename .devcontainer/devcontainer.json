@@ -1,0 +1,16 @@
+{
+        "name": "Pramod Octapad Pro Environment",
+            "build": {
+                    "dockerfile": "../Dockerfile"
+                        },
+                            "customizations": {
+                                    "vscode": {
+                                                "extensions": [
+                                                                "vscjava.vscode-java-pack",
+                                                                                "ms-azuretools.vscode-docker"
+                                                                                            ]
+                                                                                                    }
+                                                                                                        },
+                                                                                                            "postCreateCommand": "echo 'Tools and Environment setup successfully!'"
+                                                                                                            }
+}
